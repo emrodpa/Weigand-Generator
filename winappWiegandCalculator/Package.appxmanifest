@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+  <Identity Name="14187EarpSoft.WiegandCalculator" Publisher="CN=B5BA3D48-CC1A-4FEB-8F05-5E565B0FD32E" Version="1.1.0.0" />
+  <Properties>
+    <DisplayName>Wiegand Calculator</DisplayName>
+    <PublisherDisplayName>EarpSoft</PublisherDisplayName>
+    <Logo>Assets\wcStoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="winappWiegandCalculator.App">
+      <m2:VisualElements DisplayName="Wiegand Calculator" Description="calculates the output signal in a Wiegand format of a card reader. Binary and hexadecimal outputs are available." BackgroundColor="#464646" ForegroundText="light" Square150x150Logo="Assets\wcLogo.png" Square30x30Logo="Assets\wcSmallLogo.png">
+        <m2:DefaultTile ShortName="Wiegand">
+          <m2:ShowNameOnTiles>
+            <m2:ShowOn Tile="square150x150Logo" />
+          </m2:ShowNameOnTiles>
+        </m2:DefaultTile>
+        <m2:InitialRotationPreference>
+          <m2:Rotation Preference="portrait" />
+          <m2:Rotation Preference="landscape" />
+        </m2:InitialRotationPreference>
+        <m2:SplashScreen Image="Assets\wcSplashScreen.png" />
+      </m2:VisualElements>
+    </Application>
+  </Applications>
+</Package>
